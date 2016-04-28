@@ -3,6 +3,7 @@ djangocms_ckeditor_font
 =======================
 
 A django app that adds the font ckeditor plugin (http://ckeditor.com/addon/font) into djangocms's ckeditor.
+
 Current Font plugin version: ``4.5.8``
 
 Installation
