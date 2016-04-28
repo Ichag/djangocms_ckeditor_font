@@ -10,14 +10,16 @@ Todo
 ====
 
 - Add it to pip
-
+- Implement an updater for the plugin (or for all possible plugins?)
 
 Installation
 ============
 
+- Pull it from github ``$ git clone git@github.com:Ichag/djangocms_ckeditor_font.git``
+- ``$ cd djangocms_ckeditor_font``
+- ``$ python setup.py install``
+
 To get started using ``djangocms_ckeditor_font``:
-
-
 
 - add the app to ``INSTALLED_APPS`` and make sure it's before ``djangocms_text_ckeditor``::
 
@@ -64,4 +66,9 @@ You can adjust fonts and fontsizes throught the settings:
 Contribute
 ==========
 
-Pull requests are very welcome!
+Pull requests are very welcome! But I have no clue about ckeditor or font-plugin. This is just a wrapper for djangocms_text_ckeditor!
+
+Licence
+=======
+
+MIT
