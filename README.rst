@@ -11,9 +11,13 @@ To get started using ``djangocms_ckeditor_font``:
 
 Todo
 ====
+
+Add it to pip
 - install it with ``pip``::
 
     $ pip install djangocms_ckeditor_font
+
+
 
 - add the app to ``INSTALLED_APPS`` and make sure it's before ``djangocms_text_ckeditor``::
 
@@ -54,6 +58,7 @@ You can copy the following configuration into your ``settings.py``::
 Now when you edit any text plugin with ckeditor, you can set Font and Fontsize as inline-style.
 You can adjust fonts and fontsizes throught the settings:
 'font_names' and 'fontSize_sizes'.
+
 
 
 Contribute
