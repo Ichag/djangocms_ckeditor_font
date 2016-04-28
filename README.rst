@@ -1,14 +1,16 @@
-===========================
+=======================
 djangocms_ckeditor_font
-===========================
+=======================
 
-A django app that eases the incorporation of the two ckeditor plugins (http://ckeditor.com/addon/glyphicons and http://ckeditor.com/addon/fontawesome) into djangocms's ckeditor.
+A django app that adds the font ckeditor plugin (http://ckeditor.com/addon/font) into djangocms's ckeditor.
 
 Installation
 ============
 
 To get started using ``djangocms_ckeditor_font``:
 
+Todo
+====
 - install it with ``pip``::
 
     $ pip install djangocms_ckeditor_font
@@ -17,7 +19,7 @@ To get started using ``djangocms_ckeditor_font``:
 
     INSTALLED_APPS = (
         ...
-        'djangocms_glyphicon_awesome',
+        'djangocms_ckeditor_font',
         'djangocms_text_ckeditor',
         ...
     )
@@ -25,13 +27,12 @@ To get started using ``djangocms_ckeditor_font``:
 Configuration
 =============
 
-You need a ``CKEDITOR_SETTINGS`` in ``settings.py`` that has ``toolbar_CMS`` attribute containing ``Glyphicons``
+You need a ``CKEDITOR_SETTINGS`` in ``settings.py`` that has ``toolbar_CMS`` attribute containing ``Font`` and ``FontSize``
 
 You can copy the following configuration into your ``settings.py``::
 
     CKEDITOR_SETTINGS = {
         'language': '{{ language }}',
-        'extraPlugins': 'cmsplugins,glyphicons,lineutils,widget',
         'toolbar_CMS': [
             [ 'Source', 'Maximize' ],
             [ 'cmsplugins', '-', 'ShowBlocks' ],
@@ -43,16 +44,19 @@ You can copy the following configuration into your ``settings.py``::
             [ 'Link', 'Unlink', 'Anchor' ],
             [ 'Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe' ],
             [ 'Styles', 'Format', 'Font', 'FontSize' ],
-            [ 'TextColor', 'BGColor'],
-            [ 'Glyphicons' ],
+            [ 'TextColor', 'BGColor'],Glyphicons
+            [ 'Font' ],
+            [ 'FontSize' ]
         ],
-        'contentsCss': 'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css',
         'skin': 'moono',
     }
 
-Now when you edit any text plugin with ckeditor, you will see a red cross button. Click the button and you will find all the Glyphicons.
+Now when you edit any text plugin with ckeditor, you can set Font and Fontsize as inline-style.
+You can adjust fonts and fontsizes throught the settings:
+'font_names' and 'fontSize_sizes'.
 
-Todo
-====
 
-Although the app's name suggests that Font Awesome should be included in this app, it's not done in the first release. Would add it in the future release.
+Contribute
+==========
+
+Pull requests are very welcome!
